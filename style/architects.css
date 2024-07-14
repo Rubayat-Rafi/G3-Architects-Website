@@ -62,17 +62,16 @@ header{
 .banner-content h1{
     font-size: 64px;
     font-weight: bold;
-    /* line-height: 90px; */
     margin-bottom: 20px;
 }
 .banner-content p{
     font-size: 16px;
     font-weight: 400;
-    /* line-height: 26px; */
+    line-height: 26px;
     color: var(--font-color-secondary);
     margin-bottom: 30px;
 }
-.banner-content .btn{
+.btn{
     font-size: 20px;
     font-weight: 600;
     color: #fff;
@@ -91,4 +90,224 @@ header{
 .banner-img img{
     width: 100%;
     height: auto;
+}
+
+/* main section design  */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* features section design */
+.features-container{
+    display: flex;
+    margin: 130px 0;
+}
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.features-content{
+    max-width: 535px;
+    margin-left: 70px;
+    text-align: left;
+    align-content: center;
+}
+.features-content h2{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+#quick-list{
+    color: var(--font-color-secondary);
+    font-weight: 500;
+}
+.features{
+    color: var(--bg-main-color);
+}
+.features-content p{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color-secondary);
+    margin-bottom: 32px;
+}
+
+/* experience-container design  */
+.experience-container{
+    display: flex;
+    margin-bottom: 130px;
+}
+.experience-content{
+    max-width: 580px;
+    position: relative;
+}
+.experience-content h3{
+    margin-left: 20px;
+    max-width: 460px;
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--font-main-color);
+    margin-bottom: 24px;
+}
+.side-bar::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background: var(--bg-main-color);
+    left: -50px;
+    rotate: 90deg;
+    position: absolute;
+}
+.experience-content p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--font-color-secondary);
+    margin-bottom: 30px;
+}
+.exp-card{
+    height: fit-content;
+    box-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+.exp-card h6{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.exp-card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--font-color-secondary);
+    line-height: 26px;
+}
+
+.exp-img{
+    margin-left: 150px;
+    position: relative;
+
+}
+.exp-img img{
+    width: 700px;
+    height: 980px;
+}
+.ad{
+    height: 200px;
+    width: 340px;
+    background-color: var(--bg-main-color);
+    text-align: center;
+    align-content: center;
+    border-radius: 8px;
+    position: absolute;
+    left: -90px;
+    bottom: -10px;
+}
+.ad h3{
+    font-size: 65px;
+    color: #fff;
+    line-height: 70px;
+    font-weight: 700;
+}
+.ad p{
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* fact section design */
+.fact-container{
+    margin-bottom: 130px;
+}
+.fact-content h3{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.fact-content p{
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color-secondary);
+}
+.fact-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px ;
+    gap: 100px;
+    justify-items: center;
+}
+.fact-card{
+    height: 240px;
+    width: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+    border: 2px solid var(--bg-main-color);
+}
+.fact-card img{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.fact-card h4{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--last-font-color);
+}
+.fact-card p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--font-color-secondary);
+}
+
+/* sponspors section design */
+.spon-container{
+    margin-bottom: 130px;
+}
+.spon-content{
+    max-width: 540px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+.spon-content h3{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.spon-content p{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color-secondary);
+}
+.spon-img{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+    margin-top: 50px;
+    justify-items: center;
+}
+
+/* footer section design */
+footer{
+    width: 100%;
+    max-width: 1440px;
+    height: 100px;
+    background:var(--bg-color-primary);
+    margin: 0 auto;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 150px;
+}
+footer small{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--last-font-color);
 }
